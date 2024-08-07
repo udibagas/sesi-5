@@ -1,0 +1,14 @@
+<div class="card" style="width: 200px">
+  <a href="/products/<%= product.id  %>">
+    <img src="<%= product.imageUrl %>" class="card-img-top" alt="..." />
+  </a>
+
+  <div class="card-body">
+    <h5 class="card-title"><%= product.name %></h5>
+    <p>
+      <%= product.price.toLocaleString('id-ID', { style: 'currency', 'currency':
+      'IDR'}) %>
+    </p>
+    <a href="/buy/<%= product.id  %>" class="btn btn-primary">Buy</a>
+  </div>
+</div>
